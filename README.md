@@ -13,7 +13,9 @@ This project demonstrates how to securely **encrypt and decrypt user notes** usi
 
 ## Architecture Diagram    
 
-![System Architecture Diagram](serverless%20KMS.JPG)             
+
+![System Architecture Diagram](System%20Architecture%20Diagram/serverless%20KMS.JPG)
+        
 
 
 ---
@@ -75,7 +77,9 @@ Use the AWS Console Lambda test feature with event JSON:
 
 **To store a note:**
 
-```json
+```
+
+json
 {
   "action": "store",
   "user_id": "user123",
@@ -161,6 +165,8 @@ Add API Gateway to expose the Lambda via REST API.
 Improve encryption using symmetric AES encryption with Python libraries.
 
 Add user authentication to secure note access.
+
+---
 
 ## License
 MIT License
