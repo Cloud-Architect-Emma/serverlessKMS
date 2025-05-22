@@ -14,8 +14,10 @@ This project demonstrates how to securely **encrypt and decrypt user notes** usi
 ## Architecture Diagram    
 
 
-![System Architecture Diagram](System%20Architecture%20Diagram/serverless%20KMS.JPG)
-        
+        <p align="center">
+  <img src="System%20Architecture%20Diagram/serverless%20KMS.JPG" alt="System Architecture Diagram" />
+</p>
+
 
 
 ---
