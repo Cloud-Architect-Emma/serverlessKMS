@@ -85,6 +85,9 @@ json
   "user_id": "user123",
   "note": "My secret note stored securely"
 }
+
+```
+
 To retrieve a note:
 
 json
@@ -94,10 +97,11 @@ Edit
   "action": "retrieve",
   "user_id": "user123"
 }
+
+```
+
 Code Snippet (Lambda function core)
 python
-Copy
-Edit
 import boto3
 import base64
 import os
@@ -152,12 +156,17 @@ def lambda_handler(event, context):
     
     else:
         return {'message': 'Invalid action'}
+``
+---
+
 Notes
 This project uses AWS Console only — no API Gateway or external API.
 
 Encryption here uses base64 for demonstration; in production, use proper AES encryption with the data key.
 
 Ensure your IAM roles have correct permissions for KMS and DynamoDB.
+
+---
 
 Next Steps
 Add API Gateway to expose the Lambda via REST API.
